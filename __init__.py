@@ -8,7 +8,7 @@ class CPFManager:
         self.cpf_log = {}
             
         
-    def script(self, nove_digitos_cpf='') -> tuple:
+    def _script(self, nove_digitos_cpf='') -> tuple:
         contador_regressivo_1 = 10
         resultado_digito_1 = 0
         for digito in nove_digitos_cpf:
@@ -36,7 +36,7 @@ class CPFManager:
         for i in range(9):
             nove_digitos += str(random.randint(0,9))
 
-        dados = self.script(nove_digitos)
+        dados = self._script(nove_digitos)
         
         cpf_tratado = f'{dados[0]}{dados[1]}{dados[2]}'
         cpf_pontuado = '{}{}{}.{}{}{}.{}{}{}-{}{}'.format(*cpf_tratado)
@@ -56,7 +56,7 @@ class CPFManager:
             cpf_enviado_usuario = str(item)   
 
         nove_digitos = cpf_enviado_usuario[:9]
-        dados = self.script(nove_digitos)
+        dados = self._script(nove_digitos)
         
         cpf_tratado = f'{dados[0]}{dados[1]}{dados[2]}'
         
