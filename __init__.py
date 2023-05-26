@@ -66,18 +66,6 @@ class CPFManager:
         
         else:
             return False
-            
-            
-    def origem_cpf(self) -> str:
-        
-       for i in [9, 15, 29]:
-            d = {
-                'teste1' : i > 0 and i < 10,
-                'teste2' : i >= 10 and i < 20,
-                'teste3' : i >= 20 and i < 30 
-            }
-            
-            print(d)
 
 
 
