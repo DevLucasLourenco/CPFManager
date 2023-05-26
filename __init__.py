@@ -5,13 +5,8 @@ class CPFManager:
 
     def __init__(self) -> None:
         self.cpf = ''
-        self.cpf_log = []
-       
-    @staticmethod
-    def tratativa_cpf_adicionado_anteriormente() -> bool:
-        #pra usar o dict e saber se o cpf ja foi antes adicionado. caso tenha sido, mudar o nome do dict. caso não, incrementar
-        None 
-        
+        self.cpf_log = {}
+            
         
     def script(self, nove_digitos_cpf='') -> tuple:
         contador_regressivo_1 = 10
@@ -48,7 +43,7 @@ class CPFManager:
 
         self.cpf = cpf_tratado, cpf_pontuado
         
-        self.cpf_log.append(('Gerado', self.cpf))
+        self.cpf_log.update({self.cpf : 'Gerado'})
     
 
     def verificar_cpf(self, item: str) -> bool:
@@ -64,23 +59,24 @@ class CPFManager:
         dados = self.script(nove_digitos)
         
         cpf_tratado = f'{dados[0]}{dados[1]}{dados[2]}'
+        
         if cpf_enviado_usuario == cpf_tratado:
-            self.cpf_log.append(('Verificado', self.cpf))
+            self.cpf_log.update({self.cpf : 'Verificado'})
             return True
+        
         else:
             return False
             
             
     def origem_cpf(self) -> str:
         
-        for i in [9, 15, 29]:
-
+       for i in [9, 15, 29]:
             d = {
-                i > 0 and i < 10 : 'teste1',
-                i >= 10 and i < 20 : 'teste2',
-                i >= 20 and i < 30 : 'teste3',
+                'teste1' : i > 0 and i < 10,
+                'teste2' : i >= 10 and i < 20,
+                'teste3' : i >= 20 and i < 30 
             }
-
+            
             print(d)
 
 
