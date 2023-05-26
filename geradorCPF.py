@@ -5,9 +5,9 @@ class CPFManager:
 
     def __init__(self) -> None:
         self._nove_digitos = ''
-        self._cpf_tratado = ...
-        self._cpf_pontuado = ...
-        self.cpf = ...
+        self._cpf_tratado = None
+        self._cpf_pontuado = None
+        self.cpf = None
         
         
     def script(self) -> tuple:
@@ -72,7 +72,6 @@ if __name__ == '__main__':
     cpf.gerar()
     cpf_gerado = cpf.cpf
     print(cpf_gerado)
-
 
     print(f'A verificação do CPF {cpf_gerado[0]} retornou: {cpf.verificar_cpf(cpf_gerado[0])}')
     print(f'A verificação do CPF {cpf_gerado[1]} retornou: {cpf.verificar_cpf(cpf_gerado[1])}')
