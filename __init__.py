@@ -68,24 +68,4 @@ class CPFManager:
             self.cpf_log.update({self.cpf : 'Verificado'})
             return True
         else:
-            return False
-
-
-
-if __name__ == '__main__':
-    cpf = CPFManager()
-
-    cpf.gerar()
-    cpf_gerado = cpf.cpf
-    
-    print(cpf_gerado)
-
-    print(f'A verificação do CPF {cpf_gerado[0]} retornou: {cpf.verificar_cpf(cpf_gerado[0])}')
-    print(f'A verificação do CPF {cpf_gerado[1]} retornou: {cpf.verificar_cpf(cpf_gerado[1])}')
-    
-    
-    for i in range(8):
-        cpf.gerar()
-    
-    print(cpf.cpf_log)
-    
+            return False  
