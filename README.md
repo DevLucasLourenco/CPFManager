@@ -33,9 +33,9 @@ print(f'A verificação do CPF {cpf_gerado[0]} retornou: {cpf.verificar_cpf(cpf_
 print(f'A verificação do CPF {cpf_gerado[1]} retornou: {cpf.verificar_cpf(cpf_gerado[1])}')
 ```
 > Um exemplo de output dessas duas linhas de comando, seria:
->> A verificação do CPF 12345678912 retornou: True
+>> A verificação do CPF 35414966575 retornou: True
 >> 
->> A verificação do CPF 123.456.789-12 retornou: True
+>> A verificação do CPF 354.149.665-75 retornou: True
 
 > Caso retorne True, significa que o CPF é válido.
 
