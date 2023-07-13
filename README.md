@@ -1,7 +1,8 @@
 <div align="center">
     <h1>CPFManager</h1>
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=https://github.com/DevLucasLourenco/CPFManager"> 
 </div>
+
+<img src="https://visitor-badge.laobi.icu/badge?page_id=https://github.com/DevLucasLourenco/CPFManager"> 
 
 </br>
 
