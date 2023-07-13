@@ -10,7 +10,7 @@ Este código é responsável por gerenciar e verificar números de CPF (Cadastro
 
 ## Atributos
 - `cpf` (string): Armazena o número de CPF gerado ou verificado.
-- `cpf_log` (dict): Armazena um registro dos CPFs gerados ou verificados, juntamente com seu status.
+- `cpf_log` (dict): Armazena um registro de todos os CPFs gerados ou verificados nesta instanciação, juntamente com seus status.
 ## Métodos
 - `gerar()`: Gera um número de CPF válido e atualiza os atributos cpf e cpf_log com as informações do CPF gerado.
 - `verificar_cpf(item)`: Verifica se um número de CPF fornecido é válido. Retorna True se o CPF for válido e False caso contrário.
