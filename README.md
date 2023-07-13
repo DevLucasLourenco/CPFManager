@@ -1,5 +1,10 @@
-# CPFManager
-<img src="https://visitor-badge.laobi.icu/badge?page_id=https://github.com/DevLucasLourenco/CPFManager"> 
+<div align="center">
+    <h1>CPFManager</h1>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=https://github.com/DevLucasLourenco/CPFManager"> 
+</div>
+
+</br>
+
 Este código é responsável por gerenciar e verificar números de CPF (Cadastro de Pessoa Física) no formato brasileiro. Ela possui os seguintes atributos e métodos:
 
 ## Atributos
